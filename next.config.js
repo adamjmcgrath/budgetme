@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-        port: '',
-      },
-    ],
-  },
+  swcMinify: true,
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'lh3.googleusercontent.com',
+//         port: '',
+//       },
+//     ],
+//   },
 }
 
 module.exports = nextConfig
