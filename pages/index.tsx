@@ -8,7 +8,6 @@ import { useEffect } from 'react'
 import { EntryForm } from '../src/components/EntryForm'
 import { DailyEntries } from '../src/components/DailyEntries'
 import { Header } from '../src/components/Header'
-import { withPageAuthRequired } from '@auth0/nextjs-auth0'
 import { useGetDateFromQuery } from '../src/hooks/useGetDateFromQuery'
 import { MonthlyOverview } from '../src/components/MonthlyOverview'
 
@@ -62,6 +61,8 @@ const Home: NextPage = () => {
   )
 }
 
-export const getServerSideProps = withPageAuthRequired()
+export const getServerSideProps = function () {
+  console.log('foo')
+}
 
 export default Home
