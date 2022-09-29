@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 }
 
 export const getServerSideProps = function () {
-  console.log('foo')
+  return {}
 }
 
 export default Home
